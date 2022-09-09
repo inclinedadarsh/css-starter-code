@@ -1,0 +1,65 @@
+html {
+  font-size: 10px; /* Set to 10px for easy calculations */
+}
+
+:root {
+  --h1-text-size: 5rem;
+  --h2-text-size: 4rem;
+  --h3-text-size: 3rem;
+  --body-text-size: 2rem;
+  /* additional-text-size-1: 1rem */
+  /* additional-text-size-2: 1rem */
+  /* additional-text-size-3: 1rem */
+
+  --primary-color: #8000ff;
+  --secondary-color: #77cced;
+  --background-color: #f7f7f7;
+  --text-color: #191919;
+  /* additional-color-1: #ffffff */
+  /* additional-color-2: #ffffff */
+  /* additional-color-3: #ffffff */
+
+  --primary-font: Poppins; /* Font Not Included! Change it or @import it! */
+  --secondary-font: Montserrat; /* Font Not Included! Change it or @import it! */
+  /* Important:- All the font sizes are written inside :root, so we can change the root inside @media and don't have to worry a lot. */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--body-text-size);
+  /* line-height: 1.4; */
+  /* letter-spacing: .1px; */
+}
+
+@media screen and (max-width: 360px) { /* Standard Screen Size */
+  :root {
+    --h1-text-size: 4rem;
+    --h2-text-size: 3rem;
+    --h3-text-size: 2rem;
+    --body-text-size: 1rem;
+    /* additional-text-size-1: 1rem */
+    /* additional-text-size-2: 1rem */
+    /* additional-text-size-3: 1rem */
+  }
+}
+
+@media screen and (max-width: 1366px) { /* Standard Screen Size */
+  :root {
+    --h1-text-size: 4.5rem;
+    --h2-text-size: 3.5rem;
+    --h3-text-size: 2.5rem;
+    --body-text-size: 1.5rem;
+    /* additional-text-size-1: 1rem */
+    /* additional-text-size-2: 1rem */
+    /* additional-text-size-3: 1rem */
+  }
+}
